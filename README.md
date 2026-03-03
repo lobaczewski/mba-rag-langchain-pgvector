@@ -18,11 +18,9 @@ Este projeto implementa um pipeline **RAG (Retrieval-Augmented Generation)** cap
    - Nunca inventar resposta
 
 
-
+## 🧠 Arquitetura
 
 Fluxo do sistema:
-
-## 🧠 Arquitetura
 
 PDF → Chunking → Embeddings → PostgreSQL + pgVector  
 ↓  
@@ -53,24 +51,31 @@ Pergunta → Embedding → Similarity Search (k=10) → Prompt → LLM → Respo
     └── shared.py
 ```
 
-⚙️ Configuração do Ambiente
-1️⃣ Subir o Banco de Dados (Postgres + pgVector)
+## ⚙️ Configuração do Ambiente
+
+#### 1️⃣ Subir o Banco de Dados (Postgres + pgVector)
+
+```
 docker compose up -d
+```
 
 Verificar se está rodando:
 
+```
 docker ps
-2️⃣ Criar ambiente virtual Python
+```
+
+2️⃣  Criar ambiente virtual Python
+
 python3 -m venv venv
 source venv/bin/activate
 
 Instalar dependências:
-
 pip install -r requirements.txt
+
 3️⃣ Configurar variáveis de ambiente
 
 Criar o arquivo .env:
-
 cp .env.example .env
 
 Editar .env e inserir sua chave de API.
@@ -88,7 +93,10 @@ PG_DATABASE=ragdb
 PG_USER=postgres
 PG_PASSWORD=postgres
 PG_COLLECTION=pdf_chunks
+
+
 🚀 Execução do Projeto
+
 1️⃣ Ingestão do PDF
 
 Certifique-se de que o arquivo document.pdf está na raiz do projeto.
@@ -104,6 +112,7 @@ PDF: document.pdf
 Páginas carregadas: X
 Chunks gerados: Y
 Coleção: pdf_chunks
+
 2️⃣ Executar o Chat (CLI)
 python -m src.chat
 
@@ -116,15 +125,10 @@ RESPOSTA: ...
 O sistema segue as seguintes regras:
 
 Utiliza similarity_search_with_score(query, k=10)
-
 Responde apenas com base no CONTEXTO recuperado do banco vetorial
-
 Se a informação não estiver explicitamente no contexto, retorna:
-
 Não tenho informações necessárias para responder sua pergunta.
-
 Nunca utiliza conhecimento externo
-
 Nunca produz opiniões
 
 🧪 Testes de Validação
