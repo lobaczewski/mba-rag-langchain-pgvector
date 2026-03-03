@@ -1,6 +1,25 @@
 
 # 📘 Desafio MBA — Ingestão e Busca Semântica com LangChain + Postgres (pgVector)
 
+# 📘 Desafio MBA — Ingestão e Busca Semântica com LangChain + Postgres (pgVector)
+
+## 🎯 Objetivo
+
+Este projeto implementa um pipeline **RAG (Retrieval-Augmented Generation)** capaz de:
+
+1. **Ingerir um PDF (`document.pdf`)**
+   - Dividir em chunks de **1000 caracteres**
+   - Utilizar **overlap de 150**
+   - Gerar embeddings
+   - Armazenar vetores no **PostgreSQL + pgVector**
+
+2. **Realizar busca semântica via CLI**
+   - Vetorizar a pergunta do usuário
+   - Buscar os **10 resultados mais relevantes (k=10)**
+   - Construir o contexto a partir do banco vetorial
+   - Responder **somente com base no conteúdo do PDF**
+   - Nunca inventar respostas
+
 🎯 Objetivo
 
 Este projeto implementa um pipeline RAG (Retrieval-Augmented Generation) capaz de:
