@@ -156,11 +156,15 @@ Deve responder corretamente com base no PDF.
 
 ### Pergunta fora do contexto:
 
+```bash
 Qual é a capital da França?
+```
 
 Resposta esperada:
 
+```bash
 Não tenho informações necessárias para responder sua pergunta.
+```
 
 ## 🧰 Tecnologias Utilizadas
 
