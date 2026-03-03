@@ -19,9 +19,10 @@ Este projeto implementa um pipeline **RAG (Retrieval-Augmented Generation)** cap
 
 
 
-🧠 Arquitetura
 
 Fluxo do sistema:
+
+## 🧠 Arquitetura
 
 PDF → Chunking → Embeddings → PostgreSQL + pgVector
 ↓
