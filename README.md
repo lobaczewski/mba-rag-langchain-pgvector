@@ -86,9 +86,6 @@ Editar .env e inserir sua chave de API.
 Exemplo (Gemini):
 
 PROVIDER=gemini
-
-# Google Gemini API Key
-
 GOOGLE_API_KEY=sua chave aqui
 GEMINI_EMBEDDING_MODEL=models/gemini-embedding-001
 GEMINI_CHAT_MODEL=gemini-2.5-flash-lite
