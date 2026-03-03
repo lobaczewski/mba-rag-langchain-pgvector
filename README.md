@@ -84,7 +84,7 @@ Criar o arquivo .env:
 
 ```bash
 cp .env.example .env
-```
+---
 
 Editar .env e inserir sua chave de API.
 
