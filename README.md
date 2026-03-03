@@ -24,8 +24,8 @@ Fluxo do sistema:
 
 ## 🧠 Arquitetura
 
-PDF → Chunking → Embeddings → PostgreSQL + pgVector
-↓
+PDF → Chunking → Embeddings → PostgreSQL + pgVector  
+↓  
 Pergunta → Embedding → Similarity Search (k=10) → Prompt → LLM → Resposta
 
 ---
