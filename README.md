@@ -81,7 +81,6 @@ pip install -r requirements.txt
 ### 3️⃣ Configurar variáveis de ambiente
 
 Criar o arquivo .env:
-
 ```bash
 cp .env.example .env
 ```
