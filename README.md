@@ -40,7 +40,8 @@ Docker + Docker Compose
 
 Python 3.10+ (recomendado 3.11+)
 
-📁 Estrutura do Projeto
+## 📁 Estrutura do Projeto
+```
 .
 ├── docker-compose.yml
 ├── requirements.txt
@@ -52,7 +53,8 @@ Python 3.10+ (recomendado 3.11+)
     ├── search.py
     ├── chat.py
     └── shared.py
-    
+```
+
 ⚙️ Configuração do Ambiente
 1️⃣ Subir o Banco de Dados (Postgres + pgVector)
 docker compose up -d
