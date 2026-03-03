@@ -65,18 +65,26 @@ Verificar se está rodando:
 docker ps
 ```
 
-2️⃣  Criar ambiente virtual Python
+### 2️⃣  Criar ambiente virtual Python
 
+```
 python3 -m venv venv
 source venv/bin/activate
+```
 
 Instalar dependências:
-pip install -r requirements.txt
 
-3️⃣ Configurar variáveis de ambiente
+```
+pip install -r requirements.txt
+```
+
+### 3️⃣ Configurar variáveis de ambiente
 
 Criar o arquivo .env:
+
+```
 cp .env.example .env
+```
 
 Editar .env e inserir sua chave de API.
 
