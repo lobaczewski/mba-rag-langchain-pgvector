@@ -99,15 +99,17 @@ PG_COLLECTION=pdf_chunks
 ```
 
 
-🚀 Execução do Projeto
+## 🚀 Execução do Projeto
 
-1️⃣ Ingestão do PDF
+### 1️⃣ Ingestão do PDF
 
 Certifique-se de que o arquivo document.pdf está na raiz do projeto.
 
 Execute:
 
+```bash
 python -m src.ingest
+```
 
 Saída esperada:
 
