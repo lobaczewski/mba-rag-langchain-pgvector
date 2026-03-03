@@ -1,4 +1,6 @@
-esafio MBA — Ingestão e Busca Semântica com LangChain + Postgres (pgVector)
+
+# 📘 Desafio MBA — Ingestão e Busca Semântica com LangChain + Postgres (pgVector)
+
 🎯 Objetivo
 
 Este projeto implementa um pipeline RAG (Retrieval-Augmented Generation) capaz de:
@@ -24,6 +26,10 @@ Construir o contexto a partir do banco vetorial
 Responder somente com base no conteúdo do PDF
 
 Nunca inventar respostas
+
+
+
+
 
 🧠 Arquitetura
 
