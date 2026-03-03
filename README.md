@@ -74,7 +74,7 @@ source venv/bin/activate
 
 Instalar dependências:
 
-```bash
+```
 pip install -r requirements.txt
 ```
 
@@ -84,7 +84,7 @@ Criar o arquivo .env:
 
 ```bash
 cp .env.example .env
----
+```
 
 Editar .env e inserir sua chave de API.
 
