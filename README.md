@@ -130,8 +130,8 @@ Exemplo de uso:
 
 
 ```bash
-PERGUNTA: Qual o faturamento da empresa?
-RESPOSTA: 
+PERGUNTA: Qual o faturamento de Alfa Telecom? 
+RESPOSTA: Alfa Telecom LTDA R$ 80.272.365,43
 ```
 
 ## 🔒 Regras de Resposta
