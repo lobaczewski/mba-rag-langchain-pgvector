@@ -134,41 +134,47 @@ PERGUNTA: Qual o faturamento da empresa?
 RESPOSTA: 
 ```
 
-🔒 Regras de Resposta
+## 🔒 Regras de Resposta
 
 O sistema segue as seguintes regras:
 
+```text
 Utiliza similarity_search_with_score(query, k=10)
 Responde apenas com base no CONTEXTO recuperado do banco vetorial
 Se a informação não estiver explicitamente no contexto, retorna:
 Não tenho informações necessárias para responder sua pergunta.
+```
+
 Nunca utiliza conhecimento externo
 Nunca produz opiniões
 
-🧪 Testes de Validação
-Pergunta dentro do contexto:
+## 🧪 Testes de Validação
+
+### Pergunta dentro do contexto:
 
 Deve responder corretamente com base no PDF.
 
-Pergunta fora do contexto:
+### Pergunta fora do contexto:
+
 Qual é a capital da França?
 
 Resposta esperada:
 
 Não tenho informações necessárias para responder sua pergunta.
-🧰 Tecnologias Utilizadas
 
-Python
-LangChain
-PostgreSQL
-pgVector
-Docker
-OpenAI ou Gemini API
+## 🧰 Tecnologias Utilizadas
 
-📌 Observações
+- Python
+- LangChain
+- PostgreSQL
+- pgVector
+- Docker
+- OpenAI ou Gemini API
 
-O arquivo .env não é versionado.
-O projeto pode ser executado do zero com:
+## 📌 Observações
+
+- O arquivo .env não é versionado.
+- O projeto pode ser executado do zero com:
 
 ```bash
 docker compose down -v
@@ -177,12 +183,12 @@ python -m src.ingest
 python -m src.chat
 ```
 
-🎓 Conclusão
+## 🎓 Conclusão
 
 O projeto implementa corretamente um sistema de busca semântica baseado em RAG, garantindo:
 
 
-Separação clara entre ingestão e busca
-Armazenamento vetorial com pgVector
-Recuperação por similaridade (k=10)
-Controle de alucinação via prompt estruturado
+- Separação clara entre ingestão e busca
+- Armazenamento vetorial com pgVector
+- Recuperação por similaridade (k=10)
+- Controle de alucinação via prompt estruturado
