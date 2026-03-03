@@ -112,20 +112,28 @@ python -m src.ingest
 ```
 
 Saída esperada:
-
+```bash
 Ingestão concluída!
 PDF: document.pdf
 Páginas carregadas: X
 Chunks gerados: Y
 Coleção: pdf_chunks
+```
 
-2️⃣ Executar o Chat (CLI)
+### 2️⃣ Executar o Chat (CLI)
+
+```bash
 python -m src.chat
+```
 
 Exemplo de uso:
 
+
+```bash
 PERGUNTA: Qual o faturamento da empresa?
-RESPOSTA: ...
+RESPOSTA: 
+```
+
 🔒 Regras de Resposta
 
 O sistema segue as seguintes regras:
@@ -151,35 +159,30 @@ Não tenho informações necessárias para responder sua pergunta.
 🧰 Tecnologias Utilizadas
 
 Python
-
 LangChain
-
 PostgreSQL
-
 pgVector
-
 Docker
-
 OpenAI ou Gemini API
 
 📌 Observações
 
 O arquivo .env não é versionado.
-
 O projeto pode ser executado do zero com:
 
+```bash
 docker compose down -v
 docker compose up -d
 python -m src.ingest
 python -m src.chat
+```
+
 🎓 Conclusão
 
 O projeto implementa corretamente um sistema de busca semântica baseado em RAG, garantindo:
 
+
 Separação clara entre ingestão e busca
-
 Armazenamento vetorial com pgVector
-
 Recuperação por similaridade (k=10)
-
 Controle de alucinação via prompt estruturado
