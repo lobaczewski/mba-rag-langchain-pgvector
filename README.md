@@ -85,6 +85,7 @@ Editar .env e inserir sua chave de API.
 
 Exemplo (Gemini):
 
+```env
 PROVIDER=gemini
 GOOGLE_API_KEY=sua chave aqui
 GEMINI_EMBEDDING_MODEL=models/gemini-embedding-001
@@ -95,7 +96,7 @@ PG_DATABASE=ragdb
 PG_USER=postgres
 PG_PASSWORD=postgres
 PG_COLLECTION=pdf_chunks
-
+```
 
 
 🚀 Execução do Projeto
