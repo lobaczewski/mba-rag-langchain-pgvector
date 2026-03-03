@@ -83,19 +83,22 @@ cp .env.example .env
 
 Editar .env e inserir sua chave de API.
 
-Exemplo (OpenAI):
+Exemplo (Gemini):
 
-PROVIDER=openai
-OPENAI_API_KEY=SUA_CHAVE_AQUI
-OPENAI_EMBEDDING_MODEL=text-embedding-3-small
-OPENAI_CHAT_MODEL=gpt-5-nano
+PROVIDER=gemini
 
+# Google Gemini API Key
+
+GOOGLE_API_KEY=sua chave aqui
+GEMINI_EMBEDDING_MODEL=models/gemini-embedding-001
+GEMINI_CHAT_MODEL=gemini-2.5-flash-lite
 PG_HOST=localhost
 PG_PORT=5432
 PG_DATABASE=ragdb
 PG_USER=postgres
 PG_PASSWORD=postgres
 PG_COLLECTION=pdf_chunks
+
 
 
 🚀 Execução do Projeto
