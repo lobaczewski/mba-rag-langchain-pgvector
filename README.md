@@ -54,27 +54,23 @@ Pergunta → Embedding → Similarity Search (k=10) → Prompt → LLM → Respo
 ## ⚙️ Configuração do Ambiente
 
 #### 1️⃣ Subir o Banco de Dados (Postgres + pgVector)
-
-```
+```bash
 docker compose up -d
 ```
 
 Verificar se está rodando:
-
-```
+```bash
 docker ps
 ```
 
 ### 2️⃣  Criar ambiente virtual Python
-
-```
+```bash
 python3 -m venv venv
 source venv/bin/activate
 ```
 
 Instalar dependências:
-
-```
+```bash
 pip install -r requirements.txt
 ```
 
